@@ -23,7 +23,7 @@ for item in urls:
         culminated_list.extend(target_scraper(item['url']))
 
 print(culminated_list)
-# UNCOMMENT BELOW SECTION WHEN YOU NEED TO INSERT STUFF !
+# UNCOMMENT BELOW SECTION WHEN YOU NEED TO INSERT STUFF
 
 # for i in culminated_list:
 #     if collection.find_one({"href": i["href"]}):
