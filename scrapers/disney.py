@@ -11,7 +11,7 @@ culminated_list = []
 new_dict = {"href": None, "position": None, "company": None, "industry": None, "position_type": None, "location": None, "date_posted": None, "is_remote": None, "is_paid": None, "payment_amount": None}
 
 def disney_scraper(url):
-    disney_source = requests.get('https://jobs.disneycareers.com/search-jobs/internship/391-28648/1?glat=40.96788024902344&glon=-72.16480255126953').text
+    disney_source = requests.get(url).text
     disney_soup = BeautifulSoup(disney_source, 'lxml')
     disney_soup = disney_soup.find_all('table')[0]
     disney_soup = disney_soup.findChildren('tbody', recursive=False)[0].findChildren('tr', recursive=False)
