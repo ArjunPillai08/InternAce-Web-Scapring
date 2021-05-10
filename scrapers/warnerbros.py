@@ -20,7 +20,7 @@ def warnerbros_scraper(url):
         block = block.findChildren('div', recursive=False)[0]
         block = block.select("div", {"class": "row no-gutter"})[0].findChildren('div', recursive=False)
         child_block = (block[0].findChildren("a"))
-        href = child_block[0]["href"]
+        href = "https://www.warnerbroscareers.com/find-jobs/" + child_block[0]["href"]
         Position = block[0].select('a')[0].text
         Company = block[1].text
         Type = block[2].text

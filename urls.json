@@ -10,5 +10,11 @@
     {
         "url":"https://jobs.target.com/search-jobs/intern/1118/1?fl=6252001,1269750&glat=41.53696823120117&glon=-88.58341217041016",
         "module": "target"
+    },
+    {   "url":"https://jobs.boeing.com/category/internship-jobs/185-18469/9287/1",
+        "module": "boeing"
+    },
+    {   "url":"https://www.jobs-ups.com/category/internship-and-co-op-jobs/1187/4662/1",
+        "module": "ups"
     }
 ]

@@ -19,7 +19,7 @@ def disney_scraper(url):
         soup = disney_soup[i]
         soup = soup.findChildren('td')
         child = soup[0].findChildren('a')
-        href= child[0]["href"]
+        href= "https://jobs.disneycareers.com/job/" + child[0]["href"]
         position = soup[0].text
         date_posted = soup[1].text
         company = soup[2].text

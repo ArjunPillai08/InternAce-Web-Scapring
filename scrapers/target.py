@@ -20,12 +20,12 @@ def target_scraper(url):
     for i in range(len(target_soup)):
         block = target_soup[i]
         block = block.findChildren('a', recursive=False)[0]
-        href = (block["href"])
+        href = "https://jobs.target.com/" + block["href"]
         position = block.findChildren('h2', recursive=False)[0].text
         location = block.findChildren('span', recursive=False)[0].text
         dict_2 = copy.deepcopy(new_dict)
         culminated_list.append(dict_2)
-        culminated_list[-1]["href"] = href
+        culminated_list[-1]["href"] = "https://jobs.target.com/" + href
         culminated_list[-1]["position"] = position.replace("\n", "")
         culminated_list[-1]["locaton"] = location.replace("\n", "")
         culminated_list[-1]["company"] = "Target"
